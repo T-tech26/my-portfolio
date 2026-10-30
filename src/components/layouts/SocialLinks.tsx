@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { GithubIcon, LinkedInIcon } from "../ui/icons"
+import { Mail } from "lucide-react"
 
 interface SocialLinksProps {
-    setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
+    onNavigate?: () => void
 }
 
-const SocialLinks = ({ setIsOpen }: SocialLinksProps) => {
+const SocialLinks = ({ onNavigate }: SocialLinksProps) => {
     return (
         <>
             <Link
@@ -13,7 +14,7 @@ const SocialLinks = ({ setIsOpen }: SocialLinksProps) => {
                 aria-label="GitHub Profile" 
                 className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"  
                 rel="noreferrer" target="_blank"
-                onClick={() => setIsOpen && setIsOpen(false) }
+                onClick={onNavigate}
             >
                 <GithubIcon className="size-5" />
             </Link>
@@ -23,9 +24,18 @@ const SocialLinks = ({ setIsOpen }: SocialLinksProps) => {
                 aria-label="Linkedin Profile" 
                 className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"  
                 rel="noreferrer" target="_blank"
-                onClick={() => setIsOpen && setIsOpen(false) }
+                onClick={onNavigate}
             >
                 <LinkedInIcon className="size-10" />
+            </Link>
+
+            <Link
+                href="mailto:taridoutua341@gmail.com"
+                aria-label="Send Email"
+                className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+                onClick={onNavigate}
+            >
+                <Mail className="size-5"/>
             </Link>
         </>
     )

@@ -5,6 +5,7 @@ import Link from "next/link"
 import React, { useEffect } from "react";
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
+import LogoLink from "./LogoLink";
 
 interface MobileNavProps {
     activeLink: string;
@@ -32,14 +33,7 @@ const MobileNav = ({ activeLink, setActiveLink, isOpen, setIsOpen }: MobileNavPr
             className={`w-full h-dvh absolute top-0 left-0 bottom-0 bg-surface flex flex-col overflow-y-auto transition-[transform,visibility] duration-1000 ease-out lg:hidden ${isOpen ? 'translate-x-0 visible' : '-translate-x-full invisible'}`}
         >
             <div className="p-4 flex items-center justify-between">
-                <Link 
-                    href='/'
-                    className="flex items-center gap-1 font-mono text-label bg-surface-container-high py-1 rounded-lg text-primary hover:text-on-surface transition-colors px-2"
-                    onClick={() => setIsOpen(false)}
-                >
-                    <span className="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                    <span>&lt;Tari Dev /&gt;</span>
-                </Link>
+                <LogoLink onNavigate={() => setIsOpen(false)} />
 
                 <button
                     type="button"
@@ -56,7 +50,7 @@ const MobileNav = ({ activeLink, setActiveLink, isOpen, setIsOpen }: MobileNavPr
                     className="flex items-center gap-2"
                 >
                     <SocialLinks
-                        setIsOpen={setIsOpen}
+                        onNavigate={() => setIsOpen(false)}
                     />
                 </div>
                 

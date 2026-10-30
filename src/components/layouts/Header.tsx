@@ -6,6 +6,7 @@ import { Menu, SquareArrowOutUpRight } from "lucide-react";
 import MobileNav from "./MobileNav";
 import NavLinks from "./NavLinks";
 import SocialLinks from "./SocialLinks";
+import LogoLink from "./LogoLink";
 
 const Header = () => {
 
@@ -17,13 +18,7 @@ const Header = () => {
             className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
         >
             <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 md:px-8">
-                <Link 
-                    href='/'
-                    className="flex items-center gap-1 font-mono text-label bg-surface-container-high py-1 rounded-lg text-primary hover:text-on-surface transition-colors px-2"
-                >
-                    <span className="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                    <span>&lt;Tari Dev /&gt;</span>
-                </Link>
+                <LogoLink />
 
                 <nav 
                     className="hidden lg:flex items-center gap-1"
