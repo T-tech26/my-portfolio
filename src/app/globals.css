@@ -52,10 +52,10 @@
   --text-body-lg--line-height: 26px;
   --text-body: 14px;
   --text-body--line-height: 22px;
-  --text-label: 12px;
-  --text-label--line-height: 16px;
-  --text-caption: 12px;
-  --text-caption--line-height: 16px;
+  --text-label: 11px;
+  --text-label--line-height: 15px;
+  --text-caption: 10px;
+  --text-caption--line-height: 14px;
 
 }
 
@@ -83,4 +83,4 @@ space-lg	6
 space-xl	10
 margin	8
 gutter	6
-*
+*/

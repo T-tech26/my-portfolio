@@ -3,6 +3,7 @@ import LogoLink from "./LogoLink"
 import SocialLinks from "./SocialLinks"
 import Link from "next/link"
 import { cacheLife } from "next/cache";
+import AvailabilityBadge from "./AvailabilityBadge";
 
 async function getCurrentYear() {
     "use cache";
@@ -25,11 +26,9 @@ const Footer = async () => {
                                 <LogoLink />
                             </div>
 
-                            <div className="inline-flex items-center gap-1 px-4 py-1 rounded-full bg-surface-container-high max-w-80">
-                                <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-
-                                <span className="font-mono text-label text-tertiary">Available for full-time &amp; remote roles</span>
-                            </div>
+                            <AvailabilityBadge
+                                text="Available for full-time &amp; remote roles"
+                            />
                         </div>
                         
                         <p className="text-body text-on-surface-variant max-w-md">Junior full-stack developer building with Next.js, TypeScript and NestJS.</p>
@@ -56,7 +55,7 @@ const Footer = async () => {
                 </nav>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-4 bg-surface-container-low/20">
-                    <span className="text-caption text-on-surface-variant">© {year} tari.dev — All systems operational.</span>
+                    <span className="text-caption text-on-surface-variant">© {year} tari.dev</span>
                     <span className="font-mono text-label text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Built with Next.js &amp; Tailwind CSS</span>
                 </div>
             </div>

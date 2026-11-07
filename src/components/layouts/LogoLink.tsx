@@ -12,7 +12,7 @@ const LogoLink = ({ onNavigate }: LogoLinkProps) => {
             className="flex items-center gap-1 font-mono text-label bg-surface-container-high py-1 rounded-lg text-primary hover:text-on-surface transition-colors px-2"
             onClick={onNavigate}
         >
-            <span className="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            <span className="inline-block size-2 rounded-full bg-tertiary animate-pulse"></span>
             <span>&lt;Tari Dev /&gt;</span>
         </Link>
     )

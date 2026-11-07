@@ -53,7 +53,7 @@ const Header = () => {
                         aria-controls="mobile-nav"
                         onClick={() => setIsOpen(true)}
                         className="lg:hidden flex size-8 items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface cursor-pointer"
-                        >
+                    >
                         <Menu className="size-6" aria-hidden="true" />
                     </button>
                 </div>
