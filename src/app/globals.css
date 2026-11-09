@@ -65,6 +65,10 @@
   --font-mono: var(--font-jetbrains);
 }
 
+@utility section {
+  @apply overflow-hidden w-full mx-auto max-w-7xl px-4 md:px-8
+}
+
 html {
   color-scheme: dark;
   scroll-padding-top: 5rem;

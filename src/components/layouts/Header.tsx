@@ -40,6 +40,7 @@ const Header = () => {
 
                     <Link
                         href="/"
+                        aria-label="Resume download link"
                         className="hidden sm:inline-flex items-center gap-1 px-4 py-1 rounded-lg bg-primary-container text-on-primary-container font-mono text-label hover:bg-primary hover:text-on-primary transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
                     >
                         View Resume

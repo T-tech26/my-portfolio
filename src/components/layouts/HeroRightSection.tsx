@@ -2,7 +2,7 @@ import { Braces, CircleCheck, SquareTerminal } from "lucide-react"
 
 const HeroRightSection = () => {
     return (
-        <div className="lg:col-span-5 w-full">
+        <div className="lg:col-span-5 w-full" aria-hidden="true" >
             <div className="w-full bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col border border-surface-container-high/40">
                 <div className="px-4 py-2 bg-surface-container flex items-center justify-between border-b border-surface-container-high/40">
                     <div className="flex items-center gap-1">
@@ -13,7 +13,7 @@ const HeroRightSection = () => {
                         <span className="size-2.5 rounded-full bg-tertiary-container inline-block"></span>
                     </div>
 
-                    <div className="flex items-center gap-.5">
+                    <div className="flex items-center gap-0.5">
                         <span className="px-2 py-1 rounded bg-surface-container-high font-mono text-caption text-primary flex items-center gap-1">
                             <SquareTerminal className="size-4" /> app/api/projects/route.ts
                         </span>
@@ -30,7 +30,7 @@ const HeroRightSection = () => {
                     </div>
                 </div>
 
-                <div className="p-5 text-label tracking-normal text-on-surface-variant overflow-x-auto space-y-1 bg-surface-container-lowest/80">
+                <div className="p-5 font-mono text-label tracking-normal text-on-surface-variant overflow-x-auto space-y-1 bg-surface-container-lowest/80">
                     <div className="flex items-center gap-4">
                         <span className="text-outline w-6 text-right select-none font-mono text-caption">01</span>
                         <span>
@@ -91,7 +91,7 @@ const HeroRightSection = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <span className="text-outline w-6 text-right select-none font-label-mono text-caption">10</span>
+                        <span className="text-outline w-6 text-right select-none font-mono text-caption">10</span>
                         <span className="pl-8">{`where: { workspaceId: session.workspaceId },`}
                         </span>
                     </div>

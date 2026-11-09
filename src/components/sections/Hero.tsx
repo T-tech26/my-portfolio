@@ -24,7 +24,7 @@ const Hero = () => {
                     <h1 className="text-display-mobile md:text-display text-on-surface tracking-tight leading-none">Building Reliable Web Applications That Solve Real Problems.</h1>
 
                     {/* Subheading */}
-                    <p className="text-body lg:not-only:text-body-lg text-on-surface-variant max-w-2xl">Self-taught software developer focused on building robust, performant full-stack web applications. Practical experience developing responsive client interfaces and dependable backend APIs with Next.js, React, TypeScript, Node.js, and relational databases.</p>
+                    <p className="text-body lg:text-body-lg text-on-surface-variant max-w-2xl">Self-taught software developer focused on building robust, performant full-stack web applications. Practical experience developing responsive client interfaces and dependable backend APIs with Next.js, React, TypeScript, Node.js, and relational databases.</p>
 
                     {/* Interactive Action Bar */}
                     <div className="flex flex-wrap items-center gap-4 pt-1">
@@ -33,7 +33,7 @@ const Hero = () => {
                         >
                             View Projects
                             <ArrowRight 
-                                className="size-4 -mt-1 transition-transform group-hover:translate-x-0.5"
+                                className="size-4 transition-transform group-hover:translate-x-0.5"
                             />
                         </Link>
                         
@@ -54,20 +54,26 @@ const Hero = () => {
                             className={buttonStyles("ghost")}
                             href={github}
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <Code className="size-4" />
                             
                             <span>github.com/T-tech26</span>
+
+                            <span className="sr-only">(opens in a new tab)</span>
                         </Link>
 
                         <Link 
                             className={buttonStyles("ghost")}
                             href={linkedin}
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <Share2 className="size-4" />
                             
-                            <span>linkedin.com/in/developer</span>
+                            <span>linkedin.com/T-tech26</span>
+
+                            <span className="sr-only">(opens in a new tab)</span>
                         </Link>
 
                         <CopyEmailButton email={email} />

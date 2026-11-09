@@ -3,7 +3,7 @@ import { ComponentProps } from "react";
 
 type Variant = "badge" | "tags";
 
-const base = "inline-flex items-center gap-1 px-4 py-1 bg-surface-container-low hover:bg-surface-container-high hover:text-on-surface font-mono text-label transition-colors cursor-pointer w-fit";
+const base = "inline-flex items-center gap-1 px-4 py-1 font-mono text-label w-fit";
 
 const variants: Record<Variant, string> = {
     tags: "",

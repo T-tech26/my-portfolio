@@ -12,7 +12,7 @@ const SocialLinks = ({ onNavigate }: SocialLinksProps) => {
         <>
             <Link
                 href={github}
-                aria-label="GitHub Profile" 
+                aria-label="GitHub profile (opens in a new tab)" 
                 className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"  
                 rel="noreferrer" target="_blank"
                 onClick={onNavigate}
@@ -22,7 +22,7 @@ const SocialLinks = ({ onNavigate }: SocialLinksProps) => {
 
             <Link
                 href={linkedin}
-                aria-label="Linkedin Profile" 
+                aria-label="Linkedin Profile (opens in a new tab)" 
                 className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"  
                 rel="noreferrer" target="_blank"
                 onClick={onNavigate}
