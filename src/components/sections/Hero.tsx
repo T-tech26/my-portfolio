@@ -9,7 +9,7 @@ import HeroRightSection from "../layouts/HeroRightSection"
 const Hero = () => {
 
     return (
-        <section className="relative pt-8 pb-10 flex flex-col gap-10">
+        <section className="section">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
                 {/* Left: Headline & Actions */}
@@ -83,7 +83,6 @@ const Hero = () => {
                 {/* Right: Modern Code Editor Terminal Card */}
                 <HeroRightSection />
             </div>
-
         </section>
     )
 }

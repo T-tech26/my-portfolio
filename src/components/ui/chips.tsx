@@ -3,12 +3,14 @@ import { ComponentProps } from "react";
 
 type Variant = "badge" | "tags";
 
-const base = "inline-flex items-center gap-1 px-4 py-1 font-mono text-label w-fit";
+const base =
+  "inline-flex items-center gap-1 py-1 font-mono w-fit bg-surface-container-high";
+
 
 const variants: Record<Variant, string> = {
-    tags: "",
-    badge: "rounded-full bg-surface-container-high",
-}
+  tags: "rounded px-2 text-on-surface text-caption",
+  badge: "rounded-full text-label px-4",
+};
 
 export function chipStyles(variant: Variant = "tags", className?: string) {
     return cn(base, variants[variant], className);
