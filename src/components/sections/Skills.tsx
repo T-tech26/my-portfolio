@@ -13,7 +13,7 @@ const Skills = () => {
             Tools I build with
           </h2>
 
-          <p className="text-body-md text-on-surface-variant max-w-2xl">
+          <p className="text-body text-on-surface-variant max-w-2xl">
             I build full-stack apps with TypeScript end to end, and I’m still
             deepening my backend and testing skills.
           </p>
