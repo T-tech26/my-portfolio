@@ -1,12 +1,13 @@
 import { Chip } from "../ui/chips";
 import { SkillGroup } from "../../types";
+import { accentStyles } from "@/utils";
 
-const SkillsCard = ({ icon: Icon, tag, skill, description, stacks }: SkillGroup) => {
+const SkillsCard = ({ icon: Icon, accent, tag, skill, description, stacks }: SkillGroup) => {
     return (
         <li className="p-6 rounded-xl bg-surface-container flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-center justify-between">
-                <div className="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
-                    <Icon className="size-5" aria-hidden="true" />
+                <div className={`w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center ${accentStyles[accent]}`}>
+                    <Icon className="size-5" aria-hidden />
                 </div>
                 <span className="font-mono text-caption text-outline">{tag}</span>
             </div>

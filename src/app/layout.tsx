@@ -25,7 +25,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${jetBrainsMono.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${geistSans.variable} ${jetBrainsMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="flex min-h-dvh flex-col bg-background font-sans text-on-surface">
         <Link
@@ -37,14 +38,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <Header />
         {children}
-        <Toaster 
+        <Toaster
           position="top-center"
           toastOptions={{
             classNames: {
-              toast: 'bg-surface-bright! outline-none! border-none! text-label! font-mono!',
-              success: 'text-tertiary!',
-              error: 'text-error!'
-            }
+              toast:
+                "bg-surface-bright! outline-none! border-none! text-label! font-mono!",
+              success: "text-tertiary!",
+              error: "text-error!",
+            },
           }}
         />
         <Footer />

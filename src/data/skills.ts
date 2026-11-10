@@ -4,6 +4,7 @@ import { Database, MonitorSmartphone, Server, SquareTerminal } from "lucide-reac
 export const skills: SkillGroup[] = [
   {
     icon: MonitorSmartphone,
+    accent: 'primary',
     tag: "CLIENT",
     skill: "Frontend",
     description: "Responsive, accessible interfaces with React and Next.js.",
@@ -18,6 +19,7 @@ export const skills: SkillGroup[] = [
   },
   {
     icon: Server,
+    accent: 'secondary',
     tag: "SERVER",
     skill: "Backend",
     description: "REST APIs with authentication and request validation.",
@@ -25,6 +27,7 @@ export const skills: SkillGroup[] = [
   },
   {
     icon: Database,
+    accent: 'tertiary',
     tag: "STORAGE",
     skill: "Database & Backend Services",
     description: "Relational schemas and queries with PostgreSQL and Prisma.",
@@ -38,6 +41,7 @@ export const skills: SkillGroup[] = [
   },
   {
     icon: SquareTerminal,
+    accent: 'primary-fixed',
     tag: "TOOLING",
     skill: "Tooling & Deployment",
     description:

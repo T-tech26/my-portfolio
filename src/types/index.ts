@@ -3,6 +3,7 @@ import type { StaticImageData } from "next/image";
 
 export interface SkillGroup {
   icon: LucideIcon;
+  accent: AccentColor;
   tag: string;
   skill: string;
   description: string;
@@ -27,4 +28,13 @@ export interface Project {
   liveUrl?: string;
   sourceUrl?: string;
   preview?: ProjectPreview;
+}
+
+export type AccentColor = 'primary' | 'secondary' | 'tertiary' | 'primary-fixed';
+
+export interface AboutCard {
+  icon: LucideIcon;
+  accent: AccentColor;
+  title: string;
+  description: string;
 }
