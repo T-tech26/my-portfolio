@@ -69,7 +69,7 @@ const Hero = () => {
               <span className="sr-only">(opens in a new tab)</span>
             </Link>
 
-            <CopyEmailButton email={email} />
+            <CopyEmailButton email={email} variant="ghost" />
           </div>
         </div>
 

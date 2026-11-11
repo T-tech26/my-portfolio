@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import type { StaticImageData } from "next/image";
+import type { ComponentType } from "react";
 
 export interface SkillGroup {
   icon: LucideIcon;
@@ -37,4 +38,11 @@ export interface AboutCard {
   accent: AccentColor;
   title: string;
   description: string;
+}
+
+export interface ContactLink {
+  label: string;
+  href: string;
+  icon: ComponentType<{ className?: string }>;
+  accent: AccentColor;
 }

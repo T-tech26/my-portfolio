@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, Variant } from "@/components/ui/button";
 import { toast } from "sonner";
 
-export function CopyEmailButton({ email }: { email: string }) {
+export function CopyEmailButton({ email, variant }: { email: string, variant: Variant }) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
@@ -20,13 +20,13 @@ export function CopyEmailButton({ email }: { email: string }) {
   }
 
   return (
-    <Button variant="ghost" onClick={handleCopy}>
+    <Button variant={variant} onClick={handleCopy} aria-label="Copy email address">
       {copied ? (
-        <Check className="size-4" />
+        <Check aria-hidden className="size-4" />
       ) : (
-        <Copy className="size-4" />
+        <Copy aria-hidden className="size-4" />
       )}
-      <span>{copied ? "Copied!" : "Copy Email"}</span>
+      {variant === 'ghost' && <span>{copied ? "Copied!" : "Copy Email"}</span>}
     </Button>
   );
 }

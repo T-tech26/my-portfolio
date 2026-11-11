@@ -1,7 +1,7 @@
 import { cn } from "@/utils";
 import { ComponentProps } from "react";
 
-type Variant = "primary" | "secondary" | "ghost";
+export type Variant = "primary" | "secondary" | "ghost";
 
 const base = "inline-flex items-center gap-1 rounded-lg font-mono! text-label! transition-colors shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer";
 
