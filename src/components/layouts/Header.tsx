@@ -39,12 +39,12 @@ const Header = () => {
                     </div>
 
                     <Link
-                        href="/"
-                        aria-label="Resume download link"
+                        href="/resume.pdf"
                         className="hidden sm:inline-flex items-center gap-1 px-4 py-1 rounded-lg bg-primary-container text-on-primary-container font-mono text-label hover:bg-primary hover:text-on-primary transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
                     >
                         View Resume
                         <SquareArrowOutUpRight className="size-5"/>
+                        <span className="sr-only">(opens in a new tab)</span>
                     </Link>
                     
                     <button
@@ -55,7 +55,7 @@ const Header = () => {
                         onClick={() => setIsOpen(true)}
                         className="lg:hidden flex size-8 items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface cursor-pointer"
                     >
-                        <Menu className="size-6" aria-hidden="true" />
+                        <Menu className="size-6" />
                     </button>
                 </div>
 

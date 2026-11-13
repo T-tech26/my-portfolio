@@ -55,7 +55,7 @@ const Footer = async () => {
                 </nav>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-4 bg-surface-container-low/20">
-                    <span className="text-caption text-on-surface-variant">© {year} tari.dev</span>
+                    <span className="text-caption text-on-surface-variant">© {year} taridoutua.dev</span>
                     <span className="font-mono text-label text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Built with Next.js &amp; Tailwind CSS</span>
                 </div>
             </div>

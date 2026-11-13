@@ -38,7 +38,7 @@ const About = () => {
                         className="p-6 rounded-xl bg-surface-container flex flex-col gap-1 shadow-sm"
                     >
                         <div className="flex items-center gap-1">
-                            <Icon aria-hidden className={`size-5 ${accentStyles[about.accent]}`} />
+                            <Icon className={`size-5 ${accentStyles[about.accent]}`} />
                             
                             <h3 className="text-body-lg text-on-surface">
                                 {about.title}

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { GithubIcon, LinkedInIcon } from "../ui/icons";
 import { Mail } from "lucide-react";
 import { email, github, linkedin } from "@/data/socialLinks";
+import { GithubIcon, LinkedInIcon } from "@/components/ui/Icons";
 
 interface SocialLinksProps {
   onNavigate?: () => void;

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import AvailabilityBadge from "../layouts/AvailabilityBadge";
-import { ArrowRight, Code, Mail, Share2 } from "lucide-react";
-import { buttonStyles } from "../ui/button";
+import { ArrowRight, Mail } from "lucide-react";
+import { buttonStyles } from "../ui/Button";
 import { CopyEmailButton } from "../ui/CopyEmailButton";
 import { email, github, linkedin } from "@/data/socialLinks";
 import HeroRightSection from "../layouts/HeroRightSection";
+import { GithubIcon, LinkedInIcon } from "../ui/Icons";
 
 const Hero = () => {
   return (
@@ -49,7 +50,7 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Code className="size-4" />
+              <GithubIcon className="size-4" />
 
               <span>github.com/T-tech26</span>
 
@@ -62,9 +63,9 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Share2 className="size-4" />
+              <LinkedInIcon className="size-6 -ml-1" />
 
-              <span>linkedin.com/T-tech26</span>
+              <span>linkedin.com/in/taridoutua</span>
 
               <span className="sr-only">(opens in a new tab)</span>
             </Link>

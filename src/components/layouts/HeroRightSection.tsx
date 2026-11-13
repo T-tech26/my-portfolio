@@ -7,7 +7,7 @@ const HeroRightSection = () => {
                 <div className="px-4 py-2 bg-surface-container flex items-center justify-between border-b border-surface-container-high/40">
                     <div className="flex items-center gap-1">
                         <span className="size-2.5 rounded-full bg-error-container inline-block"></span>
-                        
+
                         <span className="size-2.5 rounded-full bg-surface-bright inline-block"></span>
                         
                         <span className="size-2.5 rounded-full bg-tertiary-container inline-block"></span>
@@ -24,7 +24,7 @@ const HeroRightSection = () => {
                     </div>
 
                     <div className="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded font-mono text-caption text-tertiary">
-                        <span className="size-1.5 rounded-full bg-tertiary animate-pulse"></span>
+                        <span className="size-1.5 rounded-full bg-tertiary motion-safe:animate-pulse"></span>
                         
                         <span>TypeScript</span>
                     </div>

@@ -26,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${geistSans.variable} ${jetBrainsMono.variable} h-full antialiased scroll-smooth`}
+      className={`${geistSans.variable} ${jetBrainsMono.variable} h-full antialiased motion-safe:scroll-smooth`}
     >
       <body className="flex min-h-dvh flex-col bg-background font-sans text-on-surface">
         <Link
