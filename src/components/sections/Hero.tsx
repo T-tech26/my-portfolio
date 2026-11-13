@@ -1,11 +1,11 @@
 import Link from "next/link";
 import AvailabilityBadge from "../layouts/AvailabilityBadge";
 import { ArrowRight, Mail } from "lucide-react";
-import { buttonStyles } from "../ui/Button";
+import { buttonStyles } from "@/components/ui/Button";
 import { CopyEmailButton } from "../ui/CopyEmailButton";
 import { email, github, linkedin } from "@/data/socialLinks";
 import HeroRightSection from "../layouts/HeroRightSection";
-import { GithubIcon, LinkedInIcon } from "../ui/Icons";
+import { GithubIcon, LinkedInIcon } from "@/components/ui/Icons";
 
 const Hero = () => {
   return (

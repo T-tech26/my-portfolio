@@ -1,4 +1,4 @@
-import { Chip } from "../ui/Chips";
+import { Chip } from "@/components/ui/Chips";
 
 interface BadgeProps {
   text: string;

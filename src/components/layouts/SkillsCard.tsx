@@ -1,4 +1,4 @@
-import { Chip } from "../ui/Chips";
+import { Chip } from "@/components/ui/Chips";
 import { SkillGroup } from "../../types";
 import { accentStyles } from "@/utils";
 

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
-import { Button, Variant } from "@/components/ui/Button";
 import { toast } from "sonner";
+import { Button, Variant } from "./Button";
 
 export function CopyEmailButton({
   email,

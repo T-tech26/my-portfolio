@@ -1,8 +1,8 @@
 import type { Project, ProjectStatus } from "@/types";
 import { Check, Code, Eye } from "lucide-react";
-import { Chip } from "../ui/Chips";
+import { Chip } from "@/components/ui/Chips";
 import Link from "next/link";
-import { buttonStyles } from "../ui/Button";
+import { buttonStyles } from "@/components/ui/Button";
 import Image from "next/image";
 
 const statusLabel: Record<ProjectStatus, string> = {

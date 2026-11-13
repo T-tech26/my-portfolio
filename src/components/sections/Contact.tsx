@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CopyEmailButton } from "../ui/CopyEmailButton";
 import { email } from "@/data/socialLinks";
 import { Earth, ExternalLink, SendHorizonal } from "lucide-react";
-import { buttonStyles } from "../ui/Button";
+import { buttonStyles } from "@/components/ui/Button";
 import { contactLinks } from "@/data/contact";
 import { accentStyles } from "@/utils";
 
