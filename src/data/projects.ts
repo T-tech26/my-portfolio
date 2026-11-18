@@ -2,6 +2,35 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
     {
+        status: "live",
+        title: "Kindly Hub: Demo Donation Website",
+        purpose: "A demo donation website with Zod-validated forms and content managed in Appwrite.",
+        description:
+            "A demo donation website with a validated donation form, a contact form that sends email through Resend, and news managed through Appwrite. The organisation is fictional and no payments are taken.",
+        plannedFeatures: [
+            "Donation form validated with Zod; shows a demo confirmation and takes no payment",
+            "Contact form validated in the browser and again on the server, sending email through Resend with an escaped HTML template",
+            "News and sample feedback stored in Appwrite and managed from a separate admin dashboard",
+            "Built-in fallback content when Appwrite is unavailable",
+            "Appwrite access through server actions, so the API key stays on the server",
+        ],
+        stacks: [
+            "Next.js", 
+            "TypeScript", 
+            "Tailwind CSS", 
+            "Appwrite", 
+            "Resend", 
+            "Zod"
+        ],
+        liveUrl: "https://kindly-hub.vercel.app",
+        sourceUrl: "https://github.com/T-tech26/kindly-hub",
+        preview: {
+            src: "/kindly-hub-screenshot.webp",
+            alt: "Kindly Hub home page with the demo banner and a Donate Now button",
+            kind: "screenshot"
+        }
+    },
+    {
         status: "planned",
         title: "Project Management SaaS",
         purpose: "Task management app with workspaces and role-based access.",

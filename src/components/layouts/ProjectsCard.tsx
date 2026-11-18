@@ -58,7 +58,7 @@ const ProjectsCard = ({
               {plannedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-2">
                   {isLive ? (
-                    <Check aria-hidden className="size-5 text-tertiary" />
+                    <Check className="min-w-5 h-4 text-tertiary" />
                   ) : (
                     <span
                       aria-hidden
@@ -82,8 +82,8 @@ const ProjectsCard = ({
             ))}
           </ul>
 
-          {liveUrl || sourceUrl && (
-            <div className="flex items-center gap-5 pt-3">
+          {(liveUrl !== undefined || sourceUrl !== undefined) && (
+            <div className="flex items-center gap-5 py-3">
               {liveUrl && (
                 <Link
                   href={liveUrl}

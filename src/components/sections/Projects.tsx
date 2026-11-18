@@ -10,10 +10,10 @@ const Projects = () => {
           </span>
 
           <h2 className="text-headline-xl text-on-surface">
-            What I&apos;m building next
+            Live demo projects and what I&apos;m building next
           </h2>
           <p className="text-body text-on-surface-variant max-w-2xl">
-            Two full-stack projects in planning. Previews are design mockups, not finished apps.
+            A live demo donation website with two full-stack projects in planning. Previews are design mockups for the planned project, not finished apps.
           </p>
         </div>
 
