@@ -11,6 +11,8 @@ Personal portfolio site for Tariladei Doutua, a self-taught developer looking fo
 A single-page portfolio with sections for skills, projects, about, and contact.
 There is no backend: all content lives in typed data files, so updating the site means editing data, not components.
 
+Projects: [Kindly Hub](https://kindly-hub.vercel.app), a demo donation website, is live. Two further full-stack projects are planned.
+
 ## Tech stack
 
 - Next.js 16 (App Router) with TypeScript
@@ -28,6 +30,8 @@ There is no backend: all content lives in typed data files, so updating the site
 - Smooth-scroll navigation, disabled for users who prefer reduced motion
 
 ## Getting started
+
+Requires Node.js 20.9 or newer.
 
 ```bash
 git clone https://github.com/T-tech26/my-portfolio.git
@@ -57,7 +61,7 @@ src/
   converted the exported HTML into components instead of pasting it, and moved its colors, spacing, and type scale into Tailwind theme tokens.
 - **Content in typed data files.** Skills, projects, and links are arrays in `src/data`, typed in `src/types`. Components only render data.
 - **Server components by default.** Only the interactive parts (mobile nav, copy button) are client components, to keep client JavaScript small.
-- **Projects labelled honestly.** Both projects are marked "Planned" with design previews. Nothing is presented as built until it exists.
+- **Projects labelled honestly.** Kindly Hub is built and live, and it is a demo with a fictional organisation. The two other projects are marked "Planned" with design previews. Nothing is presented as built until it exists.
 - **No backend.** A portfolio doesn't need one, so I kept it static.
 
 ## Accessibility
@@ -73,7 +77,7 @@ src/
 
 - [ ] Build Project 1: Project Management SaaS
 - [ ] Build Project 2: Market Analytics Dashboard
-- [ ] Replace design previews with real screenshots
+- [ ] Replace the design previews of the planned projects with real screenshots once they are built
 - [ ] Add resume PDF
 
 ## Contact
