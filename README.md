@@ -82,4 +82,4 @@ src/
 
 ## Contact
 
-Tariladei Doutua · [taridoutua341@gmail.com](mailto:taridoutua341@gmail.com) · [GitHub](https://github.com/T-tech26) · [LinkedIn](https://linkedin.com/in/taridoutua)
+Tariladei Doutua · [Email](mailto:taridoutua341@gmail.com) · [GitHub](https://github.com/T-tech26) · [LinkedIn](https://linkedin.com/in/taridoutua)
