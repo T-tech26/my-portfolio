@@ -3,9 +3,9 @@ import AvailabilityBadge from "../layouts/AvailabilityBadge";
 import { ArrowRight, Mail } from "lucide-react";
 import { buttonStyles } from "@/components/ui/Button";
 import { CopyEmailButton } from "../ui/CopyEmailButton";
-import { email, github, linkedin } from "@/data/socialLinks";
+import { email, github } from "@/data/socialLinks";
 import HeroRightSection from "../layouts/HeroRightSection";
-import { GithubIcon, LinkedInIcon } from "@/components/ui/Icons";
+import { GithubIcon } from "@/components/ui/Icons";
 
 const Hero = () => {
   return (
@@ -57,7 +57,7 @@ const Hero = () => {
               <span className="sr-only">(opens in a new tab)</span>
             </Link>
 
-            <Link
+            {/* <Link
               className={buttonStyles("ghost")}
               href={linkedin}
               target="_blank"
@@ -68,7 +68,7 @@ const Hero = () => {
               <span>linkedin.com/in/taridoutua</span>
 
               <span className="sr-only">(opens in a new tab)</span>
-            </Link>
+            </Link> */}
 
             <CopyEmailButton email={email} variant="ghost" />
           </div>

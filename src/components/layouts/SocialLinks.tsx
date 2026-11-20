@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import { email, github, linkedin } from "@/data/socialLinks";
-import { GithubIcon, LinkedInIcon } from "@/components/ui/Icons";
+import { email, github } from "@/data/socialLinks";
+import { GithubIcon } from "@/components/ui/Icons";
 
 interface SocialLinksProps {
   onNavigate?: () => void;
@@ -21,7 +21,7 @@ const SocialLinks = ({ onNavigate }: SocialLinksProps) => {
         <GithubIcon className="size-5" />
       </Link>
 
-      <Link
+      {/* <Link
         href={linkedin}
         aria-label="Linkedin Profile (opens in a new tab)"
         className="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
@@ -30,7 +30,7 @@ const SocialLinks = ({ onNavigate }: SocialLinksProps) => {
         onClick={onNavigate}
       >
         <LinkedInIcon className="size-10" />
-      </Link>
+      </Link> */}
 
       <Link
         href={`mailto:${email}`}

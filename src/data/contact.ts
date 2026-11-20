@@ -1,6 +1,6 @@
 import { ContactLink } from "@/types";
-import { github, linkedin } from "./socialLinks";
-import { GithubIcon, LinkedInIcon } from "@/components/ui/Icons";
+import { github } from "./socialLinks";
+import { GithubIcon } from "@/components/ui/Icons";
 import { FileText } from "lucide-react";
 
 export const contactLinks: ContactLink[] = [
@@ -10,12 +10,12 @@ export const contactLinks: ContactLink[] = [
     icon: GithubIcon,
     accent: "primary",
   },
-  {
-    label: "LinkedIn / In / Taridoutua",
-    href: linkedin,
-    icon: LinkedInIcon,
-    accent: "secondary",
-  },
+  // {
+  //   label: "LinkedIn / In / Taridoutua",
+  //   href: linkedin,
+  //   icon: LinkedInIcon,
+  //   accent: "secondary",
+  // },
   {
     label: "View Resume (PDF)",
     href: "/resume.pdf",
